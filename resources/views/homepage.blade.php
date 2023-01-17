@@ -22,7 +22,16 @@
             <h1>Train</h1>
             <div class="row">
                 @foreach ($trains as $train)
-                    <div class="col-3">{{ $train->departure_time }}</div>
+                    <div class="col-4">
+                        <ul class="list_train">
+                            <li> <h2>{{ $train->agency }}</h2></li>
+                            <li>Stazione di Partenza: {{ $train->departure_station }}</li>
+                            <li>Stazione di arrivo: {{ $train->arrival_station}}</li>
+                            <li>orario di partenza: {{ $train->departure_time}}</li>
+                            <li>orario di arrivo: {{ $train->arrival_time}}</li>
+
+                        </ul>
+                    </div>
                 @endforeach
             </div>
         </div>
