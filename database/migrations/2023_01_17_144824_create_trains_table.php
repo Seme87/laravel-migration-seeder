@@ -21,7 +21,7 @@ return new class extends Migration
             $table->dateTime('departure_time');
             $table->dateTime('arrival_time');
             $table->string('train_code', 100);
-            $table->unsignedTinyInteger('number of carriages');
+            $table->unsignedTinyInteger('number_of_carriages');
             $table->boolean('is_on_time')->default(1);
             $table->boolean('is_deleted')->default(0);
             $table->timestamps();
